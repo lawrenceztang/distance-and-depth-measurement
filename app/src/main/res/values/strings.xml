@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2016 Google LLC
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<resources>
+  <string translatable="false" name="app_name">Distance and Depth Measurement</string>
+  <string translatable="false" name="without_depth_explanation">The app will not function properly without depth.</string>
+  <string translatable="false" name="button_text_enable_depth">Enable</string>
+  <string translatable="false" name="button_text_disable_depth">Disable</string>
+  <string translatable="false" name="options_title_without_depth">Your device does not support depth</string>
+  <string translatable="false" name="done">Done</string>
+  <string-array translatable="false" name="depth_options_array">
+    <item>Show depth map</item>
+  </string-array>
+  <string translatable="false" name="options_title_instant_placement">Instant Placement options</string>
+  <string-array translatable="false" name="distance_units_options_array">
+    <item>Feet</item>
+    <item>Meters</item>
+  </string-array>
+  <string name="about_message">
+    Made by Lawrence Tang. \n
+
+    Distance Measurement Commercial Software License Terms
+\n1.	Order. These terms, together with the order referencing them, make up a software license agreement. The software, the developer, and the customer are all identified on the order.
+\n2.	Versions. This agreement covers the specific version of the software on the order, plus any new versions of the software that the vendor makes generally available, or specifically provides to the customer, while this agreement continues.
+\n3.	Term and Termination.
+\n(a)	Perpetual. This agreement continues until one side or the other ends it.
+\n(b)	Termination. Either side can terminate this agreement immediately if the other side breaches and fails to cure their breach within fourteen days of notice.
+\n4.	Use.
+\n(a)	Permitted Use. The customer may use the software only for its own computing needs.
+\n(b)	Prohibited Uses. The customer may not:
+\n(i)	sell, lease, license, or sublicense the software or documentation
+\n(ii)	decompile, disassemble, or reverse engineer any part of the software
+\n(iii)	allow access to the software by others not licensed under this agreement
+\n(iv)	share copies of the software or documentation with with others not licensed under this agreement
+\n(v)	make so much of the functionality of the software available to others as software-as-a-service that the service competes with the software for customers
+\n(vi)	assist or allow others to use the software against the terms of this agreement
+\n5.	Licenses.
+\n(a)	Software Copyright License. The vendor grants the customer a standard license for any copyrights in the software that the vendor can license, to copy, install, back up, and use the software as allowed under this agreement.
+\n(b)	Software Patent License. The vendor grants the customer a standard license for any patents the vendor can license or becomes able to license, to use the software as allowed under this agreement.
+\n(c)	Documentation Copyright License. The vendor grants the customer a standard license for any copyrights in the documentation that the vendor can license, to read, back up, and copy the documentation.
+\n(d)	Standard License Terms. A standard license means a nonexclusive license for the term of this agreement, for versions of the software covered by this agreement, that is conditional on payment of all fees as required by this agreement and subject to any use limits in this agreement.
+\n(e)	No Other Licenses. Apart from the licenses in Section 7 (Licenses), this agreement does not license or assign any intellectual property rights.
+\n6.	Open Source.
+\n(a)	Open Source Compliance. Some components of the software may be open source software available under free, public licenses. If the public license terms for any open source component conflict with the terms of this agreement, only the public license terms apply to that component, not the terms of this agreement. If the license terms for any open source component require an offer of source code or other information related to that component, the vendor agrees to provide on written request.
+\n(b)	Dual Licensing. If any part of the software is or becomes available under a public license:
+\n(i)	While the customer’s licenses continue, the customer must abide by this agreement, not the public license.
+\n(ii)	The customer must abide by the terms of the public license for any versions of the software not covered by this agreement.
+\n7.	No Escrow. The parties do not agree to use any software escrow service for the source code of the software under this agreement.
+\n8.	Technical Support.
+\n(a)	Basic Support. During its regular business hours, the vendor agrees to respond to e-mail support requests from customer about configuration of, use of, and problems with the software and its documentation. The vendor does not agree to any specific service levels for response to support requests.
+\n(b)	Access. On the vendor’s request, the customer agrees to give the vendor prompt access to personnel, systems, and information needed to respond to support requests.
+\n(c)	Confidentiality. On the customer’s request, the vendor will agree to the terms of a standard, published, mutual nondisclosure agreement with the customer, for the purpose of fulfilling its support obligations under this agreement.
+\n9.	Liability.
+\n(a)	Disclaimer. Section 12 (Warranties) sets out the only warranties the vendor provides for the software. The vendor disclaims any warranties the law might otherwise imply, like warranties of merchantability, fitness for any particular purpose, title, or noninfringement.
+\n(b)	Unforeseeable Damages. Neither side will be liable for breach-of-contract damages they could not have reasonably foreseen when entering into this agreement.
+\n(c)	Liability Cap. Except for Section 13(d) (Uncapped Liabilities), neither side’s total liability for breach of this agreement will exceed the amount of fees the vendor received from the customer under this agreement during the twelve months before the first claim is made. This limit applies even if the side liable is advised that the other may suffer damages, and even if the customer paid no fees at all.
+\n(d)	Uncapped Liabilities. Section 13(c) (Liability Cap) does not apply to:
+\n(i)	the customer’s obligations to pay fees
+\n(ii)	the vendor’s obligations to indemnify the customer
+\n(iii)	liabilities the law requires to be unlimited
+\n10.	General Contract Terms.
+\n(a)	Notices. Both sides agree to give notice under this agreement, the side giving notice must send by e-mail to the address the recipient gave with its signature, or to a different address given later for notices going forward, in the English language. If either side finds that e-mail can’t be delivered to the e-mail address given, the sender may give notice by registered mail to the address on file for the recipient with the state under whose laws it is organized.
+\n(b)	Governing Law. This agreement will be governed by California law.
+\n(c)	No CISG. The United Nations Convention on Contracts for the International Sale of Goods will not apply to this agreement.
+\n(d)	No UCITA. As far as the law allows, the Uniform Computer Information Transactions Act will not apply to this agreement.
+\n(e)	Dispute Resolution. The parties do not agree to mediation or arbitration of disputes related to this agreement.
+\n(f)	Enforcement. Only the parties may enforce rights under this agreement.
+\n(g)	Forum for Disputes. Both sides agree to bring any lawsuits related to this agreement in courts in the capital of the jurisdiction whose laws govern this agreement. Both sides consent to the exclusive jurisdiction of those courts and waive any objection that they would be an inconvenient forum for a lawsuit. Both sides agree that the other side can enforce judgments from those courts in other jurisdictions.
+\n(h)	Only Terms. Both sides intend the terms of this agreement, together with the order, as the final, complete, and only expression of their agreement about the software.
+\n(i)	Unenforceable Terms. If a court decides that any part of this agreement is invalid or unenforceable for any reason, and that enforcing the rest of this agreement would not defeat the purpose of this agreement, then rest of this agreement will still apply.
+\n(j)	Excuses. Neither side will be liable for any failure or delay meeting any obligation under this agreement caused by:
+\n(i)	failure of the other side or its personnel to meet their obligations under this agreement
+\n(ii)	actions done or delayed at the written request of the other side
+\n(iii)	fire, flood, earthquake, and other natural disasters
+\n(iv)	declared and undeclared wars, acts of terrorism, sabotage, riots, civil disorder, rebellions, and revolutions
+\n(v)	extraordinary malfunction of Internet infrastructure, data centers, or communication utilities
+\n(vi)	government actions taken in response to any of these causes
+\n(k)	Amendments. Both sides may change or add to the terms of this agreement only by signing a written amendment.
+\n(l)	Waivers. Both sides will waive terms of this agreement, if at all, only in signed writing.
+\n(m)	No Assignment. Neither side may assign any right under this agreement without the other side’s signed, written permission. Neither side will unreasonably refuse permission. Any attempt to assign against the terms of this agreement will have no legal effect.
+\n(n)	No Delegation. Neither side may delegate any performance under this agreement. Any attempt to delegate will have no legal effect.
+
+  </string>
+
+</resources>
