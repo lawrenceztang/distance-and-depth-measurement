@@ -58,7 +58,6 @@ import com.lawrence.common.samplerender.SampleRender;
 import com.lawrence.common.samplerender.Texture;
 import com.google.ar.core.examples.java.common.samplerender.arcore.BackgroundRenderer;
 import com.google.ar.core.examples.java.common.samplerender.arcore.PlaneRenderer;
-import com.google.ar.core.examples.java.common.samplerender.arcore.SpecularCubemapFilter;
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.core.exceptions.NotYetAvailableException;
 import com.google.ar.core.exceptions.UnavailableApkTooOldException;
@@ -112,7 +111,6 @@ public class DepthCameraActivity extends AppCompatActivity implements SampleRend
 
   // Environmental HDR
   private Texture dfgTexture;
-  private SpecularCubemapFilter cubemapFilter;
 
   private final float[] viewMatrix = new float[16];
   private final float[] projectionMatrix = new float[16];
@@ -192,6 +190,8 @@ public class DepthCameraActivity extends AppCompatActivity implements SampleRend
       Exception exception = null;
       String message = null;
       try {
+        // Create the session.
+        session = new Session(/* context= */ this);
         switch (ArCoreApk.getInstance().requestInstall(this, !installRequested)) {
           case INSTALL_REQUESTED:
             installRequested = true;
@@ -206,9 +206,6 @@ public class DepthCameraActivity extends AppCompatActivity implements SampleRend
           CameraPermissionHelper.requestCameraPermission(this);
           return;
         }
-
-        // Create the session.
-        session = new Session(/* context= */ this);
       } catch (UnavailableArcoreNotInstalledException
           | UnavailableUserDeclinedInstallationException e) {
         message = "Please install ARCore";
@@ -324,9 +321,7 @@ public class DepthCameraActivity extends AppCompatActivity implements SampleRend
       backgroundRenderer = new BackgroundRenderer(render);
       virtualSceneFramebuffer = new Framebuffer(render, /*width=*/ 1, /*height=*/ 1);
 
-      cubemapFilter =
-          new SpecularCubemapFilter(
-              render, CUBEMAP_RESOLUTION, CUBEMAP_NUMBER_OF_IMPORTANCE_SAMPLES);
+
       // Load DFG lookup table for environmental lighting
       dfgTexture =
           new Texture(
