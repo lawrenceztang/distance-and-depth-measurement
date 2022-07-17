@@ -257,27 +257,28 @@ public class DepthCameraActivity extends AppCompatActivity implements SampleRend
     surfaceView.onResume();
     displayRotationHelper.onResume();
 
+    AppRater.app_launched(this);
 
-    SharedPreferences mPrefs = getSharedPreferences("pref", 0);
-    SharedPreferences.Editor mEditor = mPrefs.edit();
-    int numResumed = mPrefs.getInt("num_resumed", 1);
-    mEditor.putInt("num_resumed", numResumed + 1).commit();
-
-    boolean reviewed = mPrefs.getBoolean("reviewed", false);
-    if (!reviewed && numResumed >= 3) {
-      ReviewManager manager = ReviewManagerFactory.create(this);
-      Task<ReviewInfo> request = manager.requestReviewFlow();
-      request.addOnCompleteListener(task -> {
-        if (task.isSuccessful()) {
-          // We can get the ReviewInfo object
-          ReviewInfo reviewInfo = task.getResult();
-          Task<Void> flow = manager.launchReviewFlow(this, reviewInfo);
-          flow.addOnCompleteListener(task2 -> {
-            mEditor.putBoolean("reviewed", true).commit();
-          });
-        }
-      });
-    }
+//    SharedPreferences mPrefs = getSharedPreferences("pref", 0);
+//    SharedPreferences.Editor mEditor = mPrefs.edit();
+//    int numResumed = mPrefs.getInt("num_resumed", 1);
+//    mEditor.putInt("num_resumed", numResumed + 1).commit();
+//
+//    boolean reviewed = mPrefs.getBoolean("reviewed", false);
+//    if (!reviewed && numResumed >= 3) {
+//      ReviewManager manager = ReviewManagerFactory.create(this);
+//      Task<ReviewInfo> request = manager.requestReviewFlow();
+//      request.addOnCompleteListener(task -> {
+//        if (task.isSuccessful()) {
+//          // We can get the ReviewInfo object
+//          ReviewInfo reviewInfo = task.getResult();
+//          Task<Void> flow = manager.launchReviewFlow(this, reviewInfo);
+//          flow.addOnCompleteListener(task2 -> {
+//            mEditor.putBoolean("reviewed", true).commit();
+//          });
+//        }
+//      });
+//    }
   }
 
   @Override
